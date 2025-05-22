@@ -81,6 +81,6 @@ target_link_libraries(g_pc_toolkit PRIVATE
 
 # Install Shared Library
 INSTALL(TARGETS g_pc_toolkit
-  RUNTIME DESTINATION g_pc_toolkit/bin
-  LIBRARY DESTINATION g_pc_toolkit/bin
+  RUNTIME DESTINATION bin
+  LIBRARY DESTINATION bin
 )

@@ -23,12 +23,12 @@
 		<Item Name="VIPM" Type="Folder" URL="../VIPM">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="bin" Type="Folder" URL="../g_pc_toolkit/bin">
+		<Item Name="bin" Type="Folder" URL="../toolkit/bin">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name=".lvversion" Type="Document" URL="../.lvversion"/>
 		<Item Name="test.lvlib" Type="Library" URL="../test/test.lvlib"/>
-		<Item Name="g_pc_toolkit.lvlib" Type="Library" URL="../g_pc_toolkit/g_pc_toolkit.lvlib"/>
+		<Item Name="toolkit.lvlib" Type="Library" URL="../toolkit/toolkit.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -154,6 +154,7 @@
 			<Item Name="CDK_sTypeDef_ProductVersion.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Installer/CDK_sTypeDef_ProductVersion.ctl"/>
 			<Item Name="CDK_Utility_GetSetStringVersion.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Installer/CDK_Utility_GetSetStringVersion.vi"/>
 			<Item Name="CDK_GLOBAL_STRINGS.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Installer/CDK_GLOBAL_STRINGS.vi"/>
+			<Item Name="gpctoolkit_32-1.dll" Type="Document" URL="../g_pc_toolkit/bin/gpctoolkit_32-1.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Source Distribution" Type="Source Distribution">
@@ -194,11 +195,11 @@
 				<Property Name="Destination[5].destName" Type="Str">VIPM</Property>
 				<Property Name="Destination[5].path" Type="Path">../build/source-distribution/VIPM</Property>
 				<Property Name="DestinationCount" Type="Int">6</Property>
-				<Property Name="Source[0].itemID" Type="Str">{AA7EC89C-9CD0-4FCC-A8C6-543A2DB2E478}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B05DA1F2-FC63-4A5B-90E9-2D390DCCF5F8}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/g_pc_toolkit.lvlib/Types</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/toolkit.lvlib/Types</Property>
 				<Property Name="Source[1].type" Type="Str">Container</Property>
 				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
@@ -217,8 +218,9 @@
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">4</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/g_pc_toolkit.lvlib</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/toolkit.lvlib</Property>
 				<Property Name="Source[4].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[4].newName" Type="Str">g_pc_toolkit.lvlib</Property>
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[4].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">5</Property>
