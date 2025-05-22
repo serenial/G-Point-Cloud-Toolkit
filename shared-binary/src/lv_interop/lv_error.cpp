@@ -2,7 +2,6 @@
 #include <string>
 #include <sstream>
 
-#include <opencv2/core.hpp>
 #include "g_pc_toolkit/lv_interop/lv_error.hpp"
 #include "g_pc_toolkit/lv_interop/lv_edvr_managed_object.hpp"
 
@@ -21,11 +20,6 @@ void LV_ErrorClusterPtr_t::copy_from_exception(std::exception_ptr ex, const char
         {
             std::rethrow_exception(ex);
         }
-    }
-    catch (cv::Exception const&e)
-    {
-        ss << e.what();
-        m_err->code = e.code;
     }
     catch (LV_MemoryManagerException const&e)
     {

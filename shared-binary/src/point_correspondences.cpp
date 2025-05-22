@@ -6,7 +6,7 @@
 #include "g_pc_toolkit/lv_interop/lv_array_1d.hpp"
 #include "g_pc_toolkit/lv_interop/lv_vec_types.hpp"
 
-#include "g_pc_toolkit_export.h"
+#include "G_PC_TOOLKIT_EXPORT.h"
 
 using namespace g_pc_toolkit;
 using namespace lv_interop;
@@ -77,7 +77,7 @@ namespace
 
 extern "C"
 {
-    g_pc_toolkit_EXPORT LV_MgErr_t g_ar_tk_ar_point_correspondences(
+    G_PC_TOOLKIT_EXPORT LV_MgErr_t g_pc_tk_point_correspondences(
         LV_ErrorClusterPtr_t error_cluster_ptr,
         LV_PointCloudArrayHandle_t source_points_handle,
         LV_PointCloudArrayHandle_t target_points_handle,

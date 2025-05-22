@@ -3,7 +3,6 @@ target_sources(g_pc_toolkit PUBLIC
   BASE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include
   FILES
   ${CMAKE_CURRENT_SOURCE_DIR}/include/g_pc_toolkit/lv_interop/lv_types.hpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/include/g_pc_toolkit/lv_interop/lv_point_correspondence.hpp
   ${CMAKE_CURRENT_SOURCE_DIR}/include/g_pc_toolkit/lv_interop/set_packing.hpp
   ${CMAKE_CURRENT_SOURCE_DIR}/include/g_pc_toolkit/lv_interop/lv_vec_types.hpp
   ${CMAKE_CURRENT_SOURCE_DIR}/include/g_pc_toolkit/lv_interop/lv_edvr_managed_object.hpp

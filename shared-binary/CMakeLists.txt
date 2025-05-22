@@ -35,7 +35,7 @@ target_compile_definitions(g_pc_toolkit PUBLIC g_pc_toolkit_BYTE_PACKING_${CMAKE
 target_include_directories(g_pc_toolkit
   PUBLIC
   "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/g_pc_toolkit>"
-  # add binary directory so auto-generated g_pc_toolkit_export.h is found
+  # add binary directory so auto-generated G_PC_TOOLKIT_EXPORT.h is found
   "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>"
 )
 
@@ -74,7 +74,7 @@ generate_export_header(g_pc_toolkit)
 
 # Set the Library Filename to include the bitness
 math(EXPR BITNESS "8*${CMAKE_SIZEOF_VOID_P}")
-set_target_properties(g_pc_toolkit PROPERTIES OUTPUT_NAME gartoolkit_${BITNESS}-${g_pc_toolkit_shared_binary_VERSION_MAJOR})
+set_target_properties(g_pc_toolkit PROPERTIES OUTPUT_NAME gpctoolkit_${BITNESS}-${g_pc_toolkit_shared_binary_VERSION_MAJOR})
 target_link_libraries(g_pc_toolkit PRIVATE
   ${PCL_LIBRARIES}
 )

@@ -8,7 +8,7 @@
 #include "g_pc_toolkit/lv_interop/lv_array_1d.hpp"
 #include "g_pc_toolkit/lv_interop/lv_str.hpp"
 #include "g_pc_toolkit/lv_interop/lv_error.hpp"
-#include "g_pc_toolkit_export.h"
+#include "G_PC_TOOLKIT_EXPORT.h"
 
 using namespace g_pc_toolkit;
 using namespace lv_interop;
@@ -223,7 +223,7 @@ void lv_interop::throw_if_edvr_ref_pointers_not_unique(std::initializer_list<LV_
 #ifdef _WIN32
 extern "C"
 {
-    g_pc_toolkit_EXPORT LV_MgErr_t g_ar_tk_specify_lv_runtime_windows(const char * const path)
+    G_PC_TOOLKIT_EXPORT LV_MgErr_t g_pc_tk_specify_lv_runtime_windows(const char * const path)
     {
         // set the path
         lv_runtime_path_windows = path;
