@@ -6,7 +6,7 @@
 #include "g_pc_toolkit/lv_interop/lv_array_1d.hpp"
 #include "g_pc_toolkit/lv_interop/lv_vec_types.hpp"
 
-#include "G_PC_TOOLKIT_EXPORT.h"
+#include "g_pc_toolkit_export.h"
 
 using namespace g_pc_toolkit;
 using namespace lv_interop;
